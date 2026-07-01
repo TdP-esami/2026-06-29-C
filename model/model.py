@@ -77,7 +77,6 @@ class Model:
         return self._bestGroup, self._maxTracks
 
     def _ricorsione(self, parziale, N):
-        print(len(parziale))
         if len(parziale) == N:
             total = self._getTotalTracks(parziale)
             if total > self._maxTracks:
